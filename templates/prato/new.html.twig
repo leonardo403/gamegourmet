@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Prato{% endblock %}
+
+{% block body %}
+    <h1>Qual o Prato ?</h1>
+
+    {{ include('prato/_form.html.twig') }}
+
+    <a href="{{ path('prato_index') }}">recomeçar</a>
+{% endblock %}

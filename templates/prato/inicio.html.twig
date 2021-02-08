@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="alert alert-info">
+  {% for prato in pratos %}
+    <p>Você pensou em {{ random([prato.nome]) }} ?</p>
+  {% endfor %}
+  <div class="btn-group-sm">
+  <a href="/prato/show" class="btn btn-primary" role="button">Sim</a>
+  <a href="/prato/new"  class="btn btn-primary" role="button">Não</a>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Editar Prato{% endblock %}
+
+{% block body %}
+    <h1>Editar Prato</h1>
+
+    {{ include('prato/_form.html.twig', {'button_label': 'Atualizar'}) }}
+
+    <a href="{{ path('prato_index') }}" class="btn btn-info" role="button">voltar</a>
+
+    {{ include('prato/_delete_form.html.twig') }}
+{% endblock %}
